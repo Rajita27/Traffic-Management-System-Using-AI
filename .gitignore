@@ -15,3 +15,5 @@ static/
 .DS_Store
 
 yolov5/
+projectvenv/
+runs/
