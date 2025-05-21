@@ -1,0 +1,15 @@
+django
+numpy
+opencv-python
+tensorflow
+matplotlib
+scikit-learn
+pillow
+djangorestframework
+requests
+pandas
+flask
+fastapi
+celery
+gunicorn
+django-cors-headers

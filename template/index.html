@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Traffic Management System Using AI</h1>
+      <div class="grid">
+
+       <!-- Live Traffic Feed -->
+        <div class="live-traffic">
+          <h2 class="sub-heading">Live Traffic Feed</h2>
+          <div class="video-feed" id="video-container">
+          </div>
+          <div class="buttons">
+            <button class="start-button">
+              <i class="fas fa-play"></i> Start Detection
+            </button>
+            <button class="stop-button">
+              <i class="fas fa-stop"></i> Stop
+            </button>
+            <button class="reset-button">
+              <i class="fas fa-sync-alt"></i> Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- Status Container (Signal Status and Traffic Status side by side) -->
+        <div class="status-container">
+          <!-- Signal Status -->
+          <div class="signal-status">
+            <h2 class="sub-heading">Signal Status</h2>
+            <div class="status-icons">
+              <span class="red-light"></span>
+              <span class="yellow-light"></span>
+              <span class="green-light"></span>
+            </div>
+          </div>
+
+          <!-- Traffic Status -->
+          <div class="traffic-status">
+            <h2 class="sub-heading">Timer</h2>
+            <div class="timer-item">
+              <span class="timer-count">0</span>
+              <p>Seconds</p>
+            </div>
+            <h2 class="sub-heading">Traffic Status</h2>
+            <div class="status-grid">
+              <div class="status-item">
+                <div class="status-number" id="vehicle-count">0</div>
+                <div class="status-label">Vehicles Detected</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <script src="{% static 'script.js' %}"></script>
+  </body>
+</html>

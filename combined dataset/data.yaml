@@ -1,0 +1,28 @@
+train: /Users/rajitamaharjan/PycharmProjects/TrafficManagementSystemUsingAI/combined dataset/train/images
+val: /Users/rajitamaharjan/PycharmProjects/TrafficManagementSystemUsingAI/combined dataset/valid/images
+
+nc: 22
+
+names:
+  - 'ambulance'
+  - 'army vehicle'
+  - 'auto rickshaw'
+  - 'bicycle'
+  - 'bus'
+  - 'car'
+  - 'garbagevan'
+  - 'human hauler'
+  - 'minibus'
+  - 'minivan'
+  - 'motorbike'
+  - 'pickup'
+  - 'policecar'
+  - 'rickshaw'
+  - 'scooter'
+  - 'suv'
+  - 'taxi'
+  - 'three wheelers -CNG-'
+  - 'truck'
+  - 'van'
+  - 'wheelbarrow'
+  - 'vehicle'

@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Django-specific files
+db.sqlite3
+media/
+static/
+
+# macOS-specific files
+.DS_Store
+
+yolov5/
