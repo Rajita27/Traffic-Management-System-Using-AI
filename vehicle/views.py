@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 # Load YOLO model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5m')
 
-video_path = 'media/video.mp4'
+video_path = 'combined dataset/sample_video.mp4'
 confidence_threshold = 0.6
 vehicle_classes = [2, 3, 1, 7, 5]
 box_color = (0, 255, 0)

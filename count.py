@@ -9,13 +9,13 @@ warnings.filterwarnings("ignore")
 # Load YOLO model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5m')
 
-video_path = 'media/video.mp4'
+video_path = 'combined dataset/sample_video.mp4'
 cap = cv2.VideoCapture(video_path)
 
 confidence_threshold = 0.6
 vehicle_classes = [2, 3, 1, 7, 5]
 
-box_c7olor = (0, 255, 0)
+box_color = (0, 255, 0)
 text_color = (255, 255, 255)
 text_background_color = (0, 0, 0)
 
@@ -73,6 +73,7 @@ while cap.isOpened():
             y1 = int(y_center - height / 2)
             x2 = int(x_center + width / 2)
             y2 = int(y_center + height / 2)
+            cv2.rectangle(frame, (x1, y1), (x2, y2), box_color, 2)
             filtered_boxes.append((x1, y1, x2, y2))
 
     objects = tracker.update(filtered_boxes)
